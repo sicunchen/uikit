@@ -5,13 +5,16 @@
   "keywords": [],
   "author": "depechecode <scunchen@umich.edu>",
   "license": "ISC",
-  "main": "lib/uikit-button.js",
+  "src": "lib/uikit-button.js",
+  "main": "dist/uikit-button.cjs.js",
+  "module": "dist/uikit-button.esm.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"

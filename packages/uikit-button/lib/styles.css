@@ -1,0 +1,49 @@
+.Button {
+  background-color: #0018cf;
+  border-radius: 0.25rem;
+  border: 1px solid #0018cf;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  transition: all 100ms ease-in-out;
+  width: auto;
+  outline: none;
+}
+
+.Button:hover,
+.Button:focus {
+  background-color: #2e27cc;
+  border-color: #2e27cc;
+}
+
+.ButtonSecondary {
+  background-color: #000;
+  border-color: #000;
+}
+
+.ButtonSecondary:hover,
+.ButtonSecondary:focus {
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+}
+
+.ButtonDisabled {
+  background-color: #a6a6a6;
+  border-color: #a6a6a6;
+  cursor: not-allowed;
+}
+.ButtonDisabled:hover,
+.ButtonDisabled:focus {
+  background-color: #a6a6a6;
+  border-color: #a6a6a6;
+}
+.ButtonWarning {
+  background-color: #d93848;
+  border-color: #d93848;
+}
+.ButtonWarning:hover,
+.ButtonWarning:focus {
+  background-color: #eb4d5d;
+  border-color: #eb4d5d;
+}
