@@ -8,7 +8,7 @@ const postcss = require("rollup-plugin-postcss");
 const currentWorkingPath = process.cwd();
 const { src, name } = require(path.join(currentWorkingPath, "package.json"));
 
-const inputPath = path.join(currentWorkingPath, main);
+const inputPath = path.join(currentWorkingPath, src);
 
 // Little workaround to get package name without scope
 const fileName = name.replace("@icpsr1/", "");
