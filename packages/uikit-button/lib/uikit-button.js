@@ -6,7 +6,7 @@ const Button = ({ children, className, type, ...rest }) => {
   const classes = cx(
     styles.Button,
     {
-      [styles.ButtonSecondary]: type === "secondary"
+      [styles.ButtonPrimary]: type === "primary"
     },
     { [styles.ButtonDisabled]: type === "disabled" },
     { [styles.ButtonWarning]: type === "warning" },

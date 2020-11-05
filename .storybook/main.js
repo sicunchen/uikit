@@ -3,7 +3,8 @@ module.exports = {
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-actions"
+    "@storybook/addon-actions",
+    "@storybook/addon-a11y"
   ],
   webpackFinal: async (config) => {
     // remove default css rule from storybook
@@ -11,7 +12,6 @@ module.exports = {
       (f) => f.test.toString() !== "/\\.css$/"
     );
 
-    // push our custom easy one
     config.module.rules.push({
       test: /\.css$/,
       use: [
