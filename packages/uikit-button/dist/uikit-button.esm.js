@@ -162,8 +162,8 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".styles_Button__2GmQd {\n  background-color: #0018cf;\n  border-radius: 0.25rem;\n  border: 1px solid #0018cf;\n  color: #fff;\n  cursor: pointer;\n  font-size: 1rem;\n  padding: 0.75rem 1rem;\n  transition: all 100ms ease-in-out;\n  width: auto;\n  outline: none;\n}\n\n.styles_Button__2GmQd:hover,\n.styles_Button__2GmQd:focus {\n  background-color: #2e27cc;\n  border-color: #2e27cc;\n}\n\n.styles_ButtonSecondary__2gAlX {\n  background-color: #000;\n  border-color: #000;\n}\n\n.styles_ButtonSecondary__2gAlX:hover,\n.styles_ButtonSecondary__2gAlX:focus {\n  background-color: #3d3d3d;\n  border-color: #3d3d3d;\n}\n\n.styles_ButtonDisabled__h0Xzi {\n  background-color: #a6a6a6;\n  border-color: #a6a6a6;\n  cursor: not-allowed;\n}\n.styles_ButtonDisabled__h0Xzi:hover,\n.styles_ButtonDisabled__h0Xzi:focus {\n  background-color: #a6a6a6;\n  border-color: #a6a6a6;\n}\n.styles_ButtonWarning__3QRXt {\n  background-color: #d93848;\n  border-color: #d93848;\n}\n.styles_ButtonWarning__3QRXt:hover,\n.styles_ButtonWarning__3QRXt:focus {\n  background-color: #eb4d5d;\n  border-color: #eb4d5d;\n}\n";
-var styles = {"Button":"styles_Button__2GmQd","ButtonSecondary":"styles_ButtonSecondary__2gAlX","ButtonDisabled":"styles_ButtonDisabled__h0Xzi","ButtonWarning":"styles_ButtonWarning__3QRXt"};
+var css_248z = ".styles_Button__2GmQd {\n  background-color: #fafbfc;\n  border-radius: 0.25rem;\n  border: 1px solid #000;\n  color: #000;\n  cursor: pointer;\n  font-size: 1rem;\n  padding: 0.75rem 1rem;\n  width: auto;\n  outline: none;\n}\n\n.styles_ButtonPrimary__VRxx5 {\n  background-color: #174992;\n  border-color: #174992;\n}\n\n.styles_ButtonDisabled__h0Xzi {\n  background-color: #a6a6a6;\n  border-color: #a6a6a6;\n  cursor: not-allowed;\n}\n\n.styles_ButtonWarning__3QRXt {\n  background-color: #ba5827;\n  border-color: #ba5827;\n  color: #fff;\n}\n";
+var styles = {"Button":"styles_Button__2GmQd","ButtonPrimary":"styles_ButtonPrimary__VRxx5","ButtonDisabled":"styles_ButtonDisabled__h0Xzi","ButtonWarning":"styles_ButtonWarning__3QRXt"};
 styleInject(css_248z);
 
 var Button = function Button(_ref) {
@@ -172,7 +172,7 @@ var Button = function Button(_ref) {
       type = _ref.type,
       rest = _objectWithoutProperties(_ref, ["children", "className", "type"]);
 
-  var classes = cx(styles.Button, _defineProperty({}, styles.ButtonSecondary, type === "secondary"), _defineProperty({}, styles.ButtonDisabled, type === "disabled"), _defineProperty({}, styles.ButtonWarning, type === "warning"), className);
+  var classes = cx(styles.Button, _defineProperty({}, styles.ButtonPrimary, type === "primary"), _defineProperty({}, styles.ButtonDisabled, type === "disabled"), _defineProperty({}, styles.ButtonWarning, type === "warning"), className);
   return /*#__PURE__*/React.createElement("button", _extends({}, rest, {
     className: classes
   }), children);
