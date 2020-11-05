@@ -162,14 +162,15 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".styles_Button__2GmQd {\n  background-color: #fafbfc;\n  border-radius: 0.25rem;\n  border: 1px solid #000;\n  color: #000;\n  cursor: pointer;\n  font-size: 1rem;\n  padding: 0.75rem 1rem;\n  width: auto;\n  outline: none;\n}\n\n.styles_ButtonPrimary__VRxx5 {\n  background-color: #174992;\n  border-color: #174992;\n}\n\n.styles_ButtonDisabled__h0Xzi {\n  background-color: #a6a6a6;\n  border-color: #a6a6a6;\n  cursor: not-allowed;\n}\n\n.styles_ButtonWarning__3QRXt {\n  background-color: #ba5827;\n  border-color: #ba5827;\n  color: #fff;\n}\n";
+var css_248z = ".styles_Button__2GmQd {\n  background-color: #fafbfc;\n  border-radius: 0.25rem;\n  border: 1px solid #000;\n  color: #000;\n  cursor: pointer;\n  font-size: 1rem;\n  padding: 0.75rem 1rem;\n  width: auto;\n  outline: none;\n}\n\n.styles_ButtonPrimary__VRxx5 {\n  background-color: #174992;\n  border-color: #174992;\n  color: #fff;\n}\n\n.styles_ButtonDisabled__h0Xzi {\n  background-color: #a6a6a6;\n  border-color: #a6a6a6;\n  cursor: not-allowed;\n}\n\n.styles_ButtonWarning__3QRXt {\n  background-color: #ba5827;\n  border-color: #ba5827;\n  color: #fff;\n}\n";
 var styles = {
   "Button": "styles_Button__2GmQd",
   "ButtonPrimary": "styles_ButtonPrimary__VRxx5",
   "ButtonDisabled": "styles_ButtonDisabled__h0Xzi",
   "ButtonWarning": "styles_ButtonWarning__3QRXt"
 };
-styleInject(css_248z);
+styleInject(css_248z); //   return <button>{children}</button>;
+// };
 
 var Button = function Button(_ref) {
   var children = _ref.children,
